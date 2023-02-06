@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testRuntimeOnly (
+            "org.slf4j:slf4j-simple:1.7.29")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
